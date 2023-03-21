@@ -104,6 +104,7 @@ public class JwtTokenUtils {
         try {
             AuthenticationInfo userInfo =
                     JSON.parseObject(userInfoJson, AuthenticationInfo.class);
+            log.debug("解析出userDetails对象：{}", userInfo);
             return userInfo;
         } catch (Exception e) {
             log.info("尝试解析token为userDetails失败", e);

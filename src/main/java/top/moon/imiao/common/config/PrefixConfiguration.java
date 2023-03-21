@@ -15,4 +15,6 @@ public class PrefixConfiguration {
     5.变量值都是key前缀,使用_链接,以_结束,就是变量名称小写,去掉prefix,在业务中使用后面拼接唯一值,例如
     Spu的缓存数据 public static final String SPU_PREFIX="spu_"
     6.在特殊情况下,允许业务层自定义key值*/
+
+    //TODO: 前缀未完成
 }

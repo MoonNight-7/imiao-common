@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * CommonConfiguration:
+ * CommonConfiguration: 通用配置
  *
  * @author xingzhanqi
  * @date 2023/03/12 17:15
