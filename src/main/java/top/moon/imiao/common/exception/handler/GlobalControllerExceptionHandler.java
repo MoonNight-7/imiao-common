@@ -18,7 +18,6 @@ import top.moon.imiao.common.restful.ResponseCode;
 @Slf4j
 public class GlobalControllerExceptionHandler {
 
-    //TODO:全局异常处理未完成
 
     /**
      * GlobalControllerExceptionHandler: 处理业务异常
