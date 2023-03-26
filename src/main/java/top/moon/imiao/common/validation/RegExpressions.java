@@ -18,4 +18,10 @@ public interface RegExpressions {
 
     String REGEXP_USER_PASSWORD = "^[\\u0020-\\u007e]{4,16}$";
     String MESSAGE_USER_PASSWORD = "密码的长度必须是4~16位！";
+
+    String REGEXP_PHONE = "^1[3-9]\\d{9}$";
+    String MESSAGE_PHONE = "手机号格式不正确！";
+
+    String REGEXP_EMAIL = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$";
+    String MESSAGE_EMAIL = "邮箱格式不正确！";
 }
