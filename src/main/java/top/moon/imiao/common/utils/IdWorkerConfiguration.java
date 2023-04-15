@@ -13,10 +13,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class IdWorkerConfiguration {
-
     @Bean
-    public Snowflake snowflake(){
-        return new Snowflake();
+    public SnowflakeIdGenerator snowflakeIdGenerator() {
+        return new SnowflakeIdGenerator(1, 1);
     }
-}
 
+}

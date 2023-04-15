@@ -22,7 +22,7 @@ public class GlobalControllerExceptionHandler {
     /**
      * GlobalControllerExceptionHandler: 处理业务异常
      *
-     * @param [top.moon.dhc_common.exception.ServiceException]
+     * @param [top.moon.imiao.common.exception.ServiceException]
      * @author xingzhanqi
      * @date 2023年03月15日 13:03:38
      * @ReturnType: top.moon.dhc_common.restful.JsonResult<java.lang.Void>
@@ -30,7 +30,6 @@ public class GlobalControllerExceptionHandler {
     @ExceptionHandler(ServiceException.class)
     public JsonResult<Void> handleServiceException(ServiceException e) {
         log.debug("出现业务异常，业务错误码={}，描述文本={}", e.getResponseCode().getValue(), e.getMessage());
-        e.printStackTrace();
         JsonResult<Void> result = JsonResult.failed(e);
         log.debug("即将返回：{}", result);
         return result;
